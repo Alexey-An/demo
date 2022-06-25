@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <title>Add User</title>
+    </head>
+    <body>
+        <h3>Регистрация пользователя</h3>
+        <div>
+            <form method="post">
+                <p><input type="text" name="name" placeholder="Имя"/></p>
+                <p><input type="text" name="email" placeholder="email"/></p>
+                <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+                <p><button type="submit">Создать</button></p>
+            </form>
+        </div>
+    </body>
+</html>
